@@ -1,0 +1,11 @@
+1. GIT Hub에 Repository 생성
+2. Web_Study\2_BackEnd\1_Java 디렉토리 생성
+3. 인텔리제이 프로젝트 생성시 'Get from VCS'로 생성하여 Git Hub 레파지토리
+  주소 입력
+4. 프로젝트 생성시 test.java를 생성하여 실행하게 한다.
+ 그 과정에서 JDK 설정하고 실행이 완료되면 .idea 설정 폴더가 생성된다.
+5. 최상단 디렉토리 밑에 '.gitignore' 파일 생성
+6. 아래 내용 삽입 (형상관리 제외 대상)
+out
+.idea
+.gitignore
