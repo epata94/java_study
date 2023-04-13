@@ -1,5 +1,6 @@
 package chapter03;
-
+// 안쪽 블록에서 바깥쪽 블록의 변수 참조 가능
+// 그 반대는(바깥쪽 블록에서 안쪽 블록) 불가능
 public class ScopeEx { // 1. 클래스 블럭
 
 	int no; // 1. 클래스 블럭 내에서 사용 가능한 변수
@@ -15,8 +16,7 @@ public class ScopeEx { // 1. 클래스 블럭
 			// if문 블럭안에서 변수 선언
 			String email = "hong@test.com";
 		}
-		
-		// if문 블럭 밖에서 email 변수를 사용하면 에러 발생 
-		//email = "hong@test.com";
+		// if문 블럭 밖에서 email 변수를 사용하면 에러 발생
+		//	email = "hong@test.com";
 	}
 }

@@ -1,5 +1,6 @@
 package chapter02;
 
+// public class [클래스명]
 public class HelloJava {
 
 	public static void main(String[] args) {

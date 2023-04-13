@@ -8,8 +8,9 @@ public class StringEx {
 		name = "홍길동"; // 변수 초기화
 		
 		String name2 = "홍길동"; // 선언과 동시에 초기화
+		// null; 참조자료형 데이터가 할당되지 않았다
 		String name3 = null;   // null값으로 초기화
-		String name4 = "";     // ""값으로 초기화
+		String name4 = "";     // ""(Empty String)값으로 초기화
 
 		System.out.println("name2="+name2);
 		System.out.println("name3="+name3);

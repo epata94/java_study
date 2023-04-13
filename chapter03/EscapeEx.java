@@ -8,7 +8,7 @@ public class EscapeEx {
 		String greet2 = "\t반갑습니다.";
 		
 		System.out.println(greet);
-		System.out.println("greet2");
+		System.out.println(greet2);
 	}
 
 }

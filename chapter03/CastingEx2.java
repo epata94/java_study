@@ -7,8 +7,9 @@ public class CastingEx2 {
 		// 강제형변환 예시
 		double pi = 3.14;	// double 자료형
 		
+//		int pi2 = pi;	// 큰자료형 데이터를 작은 자료형 변수에 할당하려고 하면 에러발생
 		int pi2 = (int)pi;	// 강제형변환
-		
+
 		System.out.println(pi2); // 값의 손실 발생
 	}
 }
