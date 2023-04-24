@@ -1,0 +1,76 @@
+1. 1에서 3의 정수를 입력하고 그 값을 확인하는 프로그램을 작성하세요.
+그 이외의 값에 대해서는 "잘못된 입력입니다"라는 메세지를 출력하세요.
+
+* 화면출력예시1
+1부터 3사이의 정수를 입력하세요: 2
+입력한 숫자는 2입니다.
+Process finished with exit code 0
+
+* 화면출력예시2
+1부터 3사이의 정수를 입력하세요: 100
+잘못된 입력입니다.
+
+Process finished with exit code 0
+
+2. 사용자로부터 1부터 7사이의 정수를 입력받고, 입력된 숫자에 해당하는 요일을 출력합니다. switch 문을 사용하여 각 경우에 맞게 출력하고, default 블록을 사용하여 잘못된 입력에 대한 예외 처리("잘못된 입력입니다.")를 합니다.
+- 1:월요일, 2:화요일 .... 7:일요일
+
+* 화면출력예시1
+1부터 7사이의 정수를 입력하세요: 1
+월요일
+
+Process finished with exit code 0
+
+* 화면출력예시2
+1부터 7사이의 정수를 입력하세요: 6
+토요일
+
+Process finished with exit code 0
+
+* 화면출력예시3
+1부터 7사이의 정수를 입력하세요: 9
+잘못된 입력입니다.
+
+Process finished with exit code 0
+
+3. 달의 숫자를 입력하여 계절을 출력하는 프로그램을 작성하세요.
+사용자로부터 입력 받은 월에 따라 해당하는 계절을 switch문으로 판단하고 출력합니다. 입력된 월이 12, 1, 2인 경우에는 "겨울", 3, 4, 5인 경우에는 "봄", 6, 7, 8인 경우에는 "여름", 9, 10, 11인 경우에는 "가을"로 판단합니다. 입력된 월이 1~12 범위를 벗어나는 경우 "잘못된 입력"을 출력합니다.
+- case를 4개만 사용할 것
+
+* 화면출력예시1
+월 입력(1~12): 2
+2월은 겨울입니다.
+
+Process finished with exit code 0
+
+* 화면출력예시2
+월 입력(1~12): 11
+11월은 가을입니다.
+
+Process finished with exit code 0
+
+* 화면출력예시3
+월 입력(1~12): 13
+13월은 잘못된 입력입니다.
+
+Process finished with exit code 0
+
+4. 사용자로부터 1부터 12 사이의 정수를 입력받아 해당 월의 일수를 계산하고 출력합니다. switch 문을 사용하여 각 월별로 해당 월의 일수를 계산하고 출력하는데, 2월의 경우 28일, 4월, 6월, 9월, 11월의 경우 30일, 그 외의 경우 31일을 출력합니다.
+
+* 화면출력예시1
+Enter the month (1-12): 2
+The number of days in month 2 is 28
+
+Process finished with exit code 0
+
+* 화면출력예시2
+Enter the month (1-12): 11
+The number of days in month 11 is 30
+
+Process finished with exit code 0
+
+* 화면출력예시3
+Enter the month (1-12): 7
+The number of days in month 7 is 31
+
+Process finished with exit code 0
