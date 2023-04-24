@@ -7,8 +7,8 @@ public class ArrEx1 {
 		int[] arrInt;
 		int arrInt2[] = null;
 		
-		//System.out.println(arrInt[0]); // 에러 발생
-		System.out.println(arrInt2[0]); // 에러 발생하지 않음
+//		System.out.println(arrInt[0]); // 에러 발생
+		System.out.println(arrInt2[0]); // 에러 발생
 		
 
 	}

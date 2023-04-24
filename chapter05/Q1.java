@@ -4,13 +4,13 @@ public class Q1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your age: ");
+        System.out.print("나이를 입력하세요:  ");
         int age = scanner.nextInt();
 
         if (age >= 18) {
-            System.out.println("You are an adult.");
+            System.out.println("당신은 성인입니다.");
         } else {
-            System.out.println("You are not an adult yet.");
+            System.out.println("당신은 미성년자입니다.");
         }
     }
 }

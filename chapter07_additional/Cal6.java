@@ -25,7 +25,8 @@ public class Cal6 {
 		
 		return inputs;
 	}
-	
+// 사용자 입력을 함수화하여 프로그램을 구조화
+// 프로그램을 구조화 한다면 유지보수, 가독성 올라간다.
 	public static void main(String[] args) {
 		int[] inputs = new int[2];
 		int result=0;

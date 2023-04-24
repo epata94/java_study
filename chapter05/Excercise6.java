@@ -8,7 +8,7 @@ public class Excercise6 {
 		for (int i=1; i<=5; i++) {
 			// 공백출력
 			for (int j=5-i; j>0; j--) {
-				System.out.print(" ");
+				System.out.print("O");
 			}
 			// 별출력
 			for (int k=1; k<=i*2-1; k++) {

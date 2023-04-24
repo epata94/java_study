@@ -23,6 +23,7 @@ class Return2 {
 		System.out.println("getTest() 메서드 시작");
 		
 		if (type == 1) {
+			// void 함수 일 경우에 return; 이렇게 정의하면 함수를 빠져나오는 조건으로 활용할 수 있다.
 			return;
 		}
 		

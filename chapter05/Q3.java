@@ -4,23 +4,23 @@ public class Q3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("성적을 입력하세요: ");
-        int score = sc.nextInt();
-        char grade;
+        System.out.print("국영수 총점을 입력하세요: ");
+        int total = sc.nextInt();
+        char level;
 
-        if (score >= 90) {
-            grade = 'A';
-        } else if (score >= 80) {
-            grade = 'B';
-        } else if (score >= 70) {
-            grade = 'C';
-        } else if (score >= 60) {
-            grade = 'D';
+        if (total >= 270) {
+            level = 'A';
+        } else if (total >= 240) {
+            level = 'B';
+        } else if (total >= 210) {
+            level = 'C';
+        } else if (total >= 180) {
+            level = 'D';
         } else {
-            grade = 'F';
+            level = 'F';
         }
 
-        System.out.println("학점: " + grade);
+        System.out.println("당신은 " + level+ "레벨입니다.");
 
         sc.close();
     }

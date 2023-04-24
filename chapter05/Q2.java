@@ -13,10 +13,12 @@ public class Q2 {
         int max;
         if (num1 > num2) {
             max = num1;
+//            System.out.println("두 정수 중에서 큰 수는 " + num1 + "입니다.");
         } else {
             max = num2;
+//            System.out.println("두 수 중에서 큰 수는 " + num2 + "입니다.");
         }
-
+//
         System.out.println("두 수 중에서 큰 수는 " + max + "입니다.");
     }
 }

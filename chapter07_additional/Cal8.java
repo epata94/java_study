@@ -20,7 +20,20 @@ public class Cal8 {
 		
 		return result;
 	}
-	
+	public static int devideNumber(int firstNum, int secondNum) {
+		int result=0;
+
+		result = firstNum/secondNum;
+
+		return result;
+	}
+	public static int multiplyNumber(int firstNum, int secondNum) {
+		int result=0;
+
+		result = firstNum*secondNum;
+
+		return result;
+	}
 	public static int[] inputNumber() {
 		int[] inputs = new int[2];
 		
@@ -46,7 +59,15 @@ public class Cal8 {
 		inputs = inputNumber();
 		result = subtractNumber(inputs[0], inputs[1]);
 		System.out.println(inputs[0] + " - " +inputs[1]+ " = " + result);
-		
+
+		inputs = inputNumber();
+		result = devideNumber(inputs[0], inputs[1]);
+		System.out.println(inputs[0] + " / " +inputs[1]+ " = " + result);
+
+		inputs = inputNumber();
+		result = multiplyNumber(inputs[0], inputs[1]);
+		System.out.println(inputs[0] + " * " +inputs[1]+ " = " + result);
+
 	}
 
 }

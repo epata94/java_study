@@ -7,7 +7,7 @@ public class Cal5 {
 	 * 		  X       X
 	 * 		  X       O		
 	 * 		  O       X		
-	 * 		  O       O		<= 여기
+	 * 		  O       O		<= 여기 : 핵심 프로그램 로직만 처리
 	 */
 	
 	public static int addNumber(int firstNum, int secondNum) {

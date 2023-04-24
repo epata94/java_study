@@ -12,7 +12,7 @@ public class ArrEx16 {
 			System.out.println(arrInt[i]);
 		}
 		
-		// 향상된 for문을 이용한 출력
+		// 향상된(간소화된) for문을 이용한 출력
 		for (int number : arrInt) {
 			System.out.println(number);
 		}

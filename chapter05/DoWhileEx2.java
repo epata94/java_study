@@ -10,7 +10,7 @@ public class DoWhileEx2 {
 		do {
 			sum += i;
 			i++;
-		}while (i <= 100);
+		}while (i < 10);
 		
 		System.out.println("합계 : "+sum);
 

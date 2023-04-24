@@ -33,7 +33,9 @@ public class Cal7 {
 		
 		return inputs;
 	}
-	
+
+	// 함수를 작성할 때에는 최대한 구조화 한다.
+	// 함수를 호출하는 상위 함수는 컨트롤러 역할을 한다.
 	public static void main(String[] args) {
 		int[] inputs = new int[2];
 		int result=0;
