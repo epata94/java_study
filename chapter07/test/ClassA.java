@@ -15,6 +15,7 @@ public class ClassA {
 	
 }
 
+// public class ClassB { : 하나의 java 파일에는 하나의 public 클래스가 유효
 class ClassB {
 	void print() {
 		System.out.println("여기는 ClassB");

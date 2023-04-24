@@ -8,8 +8,8 @@ public class ClassC {
 		ClassA ca = new ClassA();
 		ca.print();
 		
-		//ClassB cb = new ClassB(); // 접근제한자 때문에 에러
-		
+//		ClassB cb = new ClassB(); // default 접근제한자 때문에 에러
+		ClassD cd = new ClassD();
 		
 	}
 }

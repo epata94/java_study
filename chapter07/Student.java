@@ -30,7 +30,7 @@ public class Student {
 		department = d;		
 	}
 	
-	// 학과와 학년을 매개변수로 받는 생성자 (에러 발생)
+	// 학과와 학년을 매개변수로 받는 생성자 (에러 발생): 3번 생성자와 중복, 생성자는 동일한 매개변수를 같는 것을 허용하지 X
 //	Student(String d, int g) {
 //		department = d;		
 //		grade = g;

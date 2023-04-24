@@ -1,5 +1,6 @@
 package chapter07;
 
+// Alt+7 : 클래스의 Structure View
 public class BigDataStudent {
     String name;
     int korScore;

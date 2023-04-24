@@ -5,6 +5,12 @@ public class StringMethod {
     public static void main(String[] args) {
 //        String str ="Hello World!";
         String str = new String("Hello World!");
+        String num1="123";
+        String num2="456";
+        System.out.println(num1+num2);
+        System.out.println(Integer.parseInt(num1)+Integer.parseInt(num2));
+
+        System.out.println(String.valueOf(43242));
 
         // length(): 문자열의 길이 반환
         System.out.println(str.length());
