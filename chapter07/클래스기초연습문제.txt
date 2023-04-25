@@ -2,6 +2,7 @@
 - 이름(name)과 나이 필드(age)는 생성자를 통해 초기화 할수 있다.
 - 필드는 private로 선언한다.
 - 이름과 나이 필드는 setName, setAge 함수를 통해 설정가능하다. 메소드는 public으로 한다.
+- name, age는 각각 getName, getAge 메소드를 통해서 값을 읽을수 있다.
 MyPerson클래스를 사용하는 MyPersonMain 클래스를 작성하세요.
 두개의 MyPerson 객체를 생성한다.
 첫번째 객체는 생성자로 필드를 초기화한다.

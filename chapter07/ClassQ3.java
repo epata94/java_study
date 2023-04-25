@@ -19,6 +19,7 @@ class Circle {
         return 2 * Math.PI * this.radius;
     }
 
+    // radius필드에 대한 Setter 메소드 역할을 수행
     public void resize(double radius) {
         this.radius = radius;
     }
