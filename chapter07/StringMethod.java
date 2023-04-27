@@ -11,9 +11,10 @@ public class StringMethod {
         System.out.println(Integer.parseInt(num1)+Integer.parseInt(num2));
 
         System.out.println(String.valueOf(43242));
+//        Math.
 
         // length(): 문자열의 길이 반환
-        System.out.println(str.length());
+//        System.out.println(str.length());
 
         // charAt([인덱스 번호]): 해당 인덱스의 문자 반환
         System.out.println(str.charAt(6));

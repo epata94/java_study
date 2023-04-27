@@ -1,0 +1,19 @@
+문제: AddressBook 클래스를 생성하고, 다음 메소드를 구현하여 Contact를 추가하고, 주소록을 출력하는 프로그램을 작성하시오.
+
+AddressBook(int maxNumContacts): 지정된 최대 연락처 수를 사용하여 AddressBook 객체를 초기화합니다.
+void addContact(String name, String phone, String email): 이름, 전화번호 및 이메일을 사용하여 새 Contact 객체를 만들고 AddressBook에 추가합니다.
+void printAddressBook(): AddressBook 내의 모든 Contact를 출력합니다.
+최대 연락처 수는 5입니다. 연락처 정보는 다음과 같습니다.
+
+"John Smith", "123-456-7890", "john@example.com"
+"Jane Doe", "234-567-8901", "jane@example.com"
+"Bob Johnson", "345-678-9012", "bob@example.com"
+"Emily Davis", "456-789-0123", "emily@example.com"
+"David Lee", "567-890-1234", "david@example.com"
+출력 예시:
+
+이름: John Smith, 전화번호: 123-456-7890, 이메일: john@example.com
+이름: Jane Doe, 전화번호: 234-567-8901, 이메일: jane@example.com
+이름: Bob Johnson, 전화번호: 345-678-9012, 이메일: bob@example.com
+이름: Emily Davis, 전화번호: 456-789-0123, 이메일: emily@example.com
+이름: David Lee, 전화번호: 567-890-1234, 이메일: david@example.com

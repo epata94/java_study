@@ -3,7 +3,7 @@ package chapter09;
 public class AnimalMain {
 
 	public static void main(String[] args) {
-		
+//		Animal 인터페이스를 구현한 Eagle 객체
 		Animal eagle = new Eagle();
 		
 		eagle.sleep();
@@ -11,7 +11,6 @@ public class AnimalMain {
 		
 		Eagle eagleObj = (Eagle)eagle; // 강제 형변환
 		eagleObj.eat(); // Eagle 클래스의 eat() 메서드
-		
-		System.out.println(eagle instanceof Animal);
+
 	}
 }
