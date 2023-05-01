@@ -9,8 +9,8 @@ public class SimpleDateFormatEx {
 
 		Date now = new Date();
 		System.out.println(now);
-		SimpleDateFormat sf = new SimpleDateFormat("yyyy MM dd HH:mm:ss E a");
-		System.out.println(sf.format(now));
+//		SimpleDateFormat sf = new SimpleDateFormat("yyyy MM dd HH:mm:ss E a");
+//		System.out.println(sf.format(now));
 
 	}
 

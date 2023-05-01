@@ -1,7 +1,5 @@
 package chapter11;
-
 public class ExceptionEx7 {
-
 	public static void main(String[] args) throws Exception {
 		try {
 			first();
@@ -11,7 +9,6 @@ public class ExceptionEx7 {
 			throw e;
 		}
 	}
-	
 	static void first() throws Exception {
 		try {
 			second();
@@ -20,7 +17,6 @@ public class ExceptionEx7 {
 			throw e; // 예외 재발생
 		}
 	}
-	
 	static void second() throws Exception {
 		try {
 			throw new Exception("예외 발생");

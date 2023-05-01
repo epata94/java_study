@@ -13,5 +13,5 @@ public class ExceptionEx {
 		}
 		System.out.println(6);
 	}
-	
+
 }

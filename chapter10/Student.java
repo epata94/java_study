@@ -13,7 +13,7 @@ public class Student {
         return name;
     }
 
-    public double getAverageGrade() {
+    public double getAverageGrade() { // 평균 점수를 구하는 서비스 제공
         int sum = 0;
         for (int grade : grades) {
             sum += grade;

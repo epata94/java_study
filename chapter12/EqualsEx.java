@@ -6,7 +6,7 @@ public class EqualsEx {
 		Obj obj1 = new Obj(100);
 		Obj obj2 = new Obj(100);
 		Object ob = new Object();
-		ob.equals(obj2);
+//		ob.equals(obj2);
 		
 		if (obj1.equals(obj2)) {
 			System.out.println("obj1 객체와 obj2 객체는 같음");
