@@ -7,8 +7,9 @@ public class WrapperEx4 {
 		int i = 10;
 		
 		// 기본형을 참조형으로 형변환(형변환 생략가능)
-		Integer intg = (Integer)i; 
-		// Integer intg = Integer.valueOf(i);
+//		Integer intg = (Integer)i;
+//		Integer intg = i;
+		 Integer intg = Integer.valueOf(i);
 		
 		Long lng = 10L; // Long lng = new Long (100L);
 		int i2 = intg + 10; // 참조형과 기본형간의 연산 가능
@@ -17,7 +18,8 @@ public class WrapperEx4 {
 		System.out.println("l = "+l);
 		
 		Integer intg2 = new Integer(30);
-		int i3 = (int) intg2; // 참조형을 기본형으로 형변환 (형변환 생략가능)
+//		int i3 = (int) intg2; // 참조형을 기본형으로 형변환 (형변환 생략가능)
+		int i3 =  intg2; // 참조형을 기본형으로 형변환 (형변환 생략가능)
 		System.out.println ("i3 : "+i3);
 
 	}

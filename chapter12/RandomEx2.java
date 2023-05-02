@@ -8,7 +8,8 @@ public class RandomEx2 {
 		
 		Random rand = new Random();
 		
-		for (int i=0; i<5; i++) {
+		for (int i=0; i<15; i++) {
+//nextInt(경계값) : 0이상 경계값미만의 랜덤한 값을 생성
 			System.out.println(rand.nextInt(6)+1);
 		}
 

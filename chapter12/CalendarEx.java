@@ -5,7 +5,8 @@ import java.util.Calendar;
 public class CalendarEx {
 
 	public static void main(String[] args) {
-		
+	// Calendar 클래스도 최근에는 사용하지 않는 클래스
+	// Java 1.x 버전에 나온 클래스이고 하위 호환을 위해 사용[
 		Calendar today = Calendar.getInstance();
 		
 		System.out.println("올해 년도 :"+today.get(Calendar.YEAR));
