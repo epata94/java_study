@@ -30,7 +30,7 @@ public class StudentManagement2 {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n==============================");
+            System.out.println("\n============ 메뉴 =============");
             System.out.println("1. 전체 학생 정보");
             System.out.println("2. 최고 평균점수 학생 검색");
             System.out.println("3. 최저 평균점수 학생 검색");
@@ -78,7 +78,7 @@ public class StudentManagement2 {
         }
 
         System.out.println("\n=======================================");
-        System.out.println("이름\tID\t국어\t영어\t수학\t평균");
+        System.out.println("이름\t\tID\t\t국어\t영어\t수학\t평균");
         System.out.println("=======================================");
 
         // ArrayList에 값을 등록시 Object로 등록되기 때문에

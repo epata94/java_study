@@ -1,5 +1,5 @@
 package chapter13;
-
+import java.text.DecimalFormat;
 public class Student {
     private static int nextId = 1;
     private int id;
@@ -41,6 +41,7 @@ public class Student {
     }
 
     public String toString() {
-        return name + "\t" + id + "\t" + koreanScore + "\t" + englishScore + "\t" + mathScore + "\t" + String.format("%.2f", getAverage());
+        DecimalFormat df = new DecimalFormat("ID000");
+        return name + "\t" + df.format(id) + "\t" + koreanScore + "\t" + englishScore + "\t" + mathScore + "\t" + String.format("%.2f", getAverage());
     }
 }

@@ -8,9 +8,11 @@ public class DecimalFormatEx2 {
 		
 		DecimalFormat df1 = new DecimalFormat("#,###.##");
 		DecimalFormat df2 = new DecimalFormat("000,000");
-		
+		DecimalFormat df3 = new DecimalFormat("ID00000");
+
 		System.out.println(df1.format(5500));
 		System.out.println(df2.format(5500));
+		System.out.println(df3.format(5500));
 
 	}
 
