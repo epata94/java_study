@@ -1,7 +1,9 @@
 package chapter13;
 
 import java.util.Vector;
-
+// ArrayList, Vector 클래스 모두 동일한 자료구조, 메소드를 가지고 있다.
+// 단, 성능상 Vector 클래스는 Multi Thread 환경에서 좋은 성능을 보인다.
+// 그 이외에 대부분의 경우에 ArrayList로 구현한다.
 public class ListEx2 {
 
 	public static void main(String[] args) {
