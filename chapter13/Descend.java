@@ -8,6 +8,7 @@ public class Descend implements Comparator {
 	public int compare(Object o1, Object o2) {
 		Comparable c1 = (Comparable)o1;
 		Comparable c2 = (Comparable)o2;
+		// String의 compareTo가 호출됨
 		return c1.compareTo(c2) * (-1);
 //		return c1.compareTo(c2) * (1);
 	}

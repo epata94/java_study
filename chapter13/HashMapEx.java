@@ -10,9 +10,7 @@ public class HashMapEx {
 		// Map 객체 생성
 		//Map map =new HashMap();
 		HashMap map =new HashMap();
-		Object obj = new Object();
-		obj.equals(obj);
-		
+
 		// 이름이 담긴 문자열 배열 생성
 		String[] names = {"홍길동", "김유신", "이순신", "강감찬", "김유신"};
 		// 숫자가 담긴 정수 배열 생성
@@ -20,6 +18,7 @@ public class HashMapEx {
 		
 		// Map 객체에 두 배열의 값들을 키와 밸류 쌍으로 저장
 		for(int i=0;i<names.length;i++) {
+			// put(Key값, Value값)
 			map.put(names[i], nums[i]);
 		}
 		

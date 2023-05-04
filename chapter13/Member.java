@@ -17,8 +17,9 @@ public class Member {
 	public String toString() {
 		return "("+ name + "," + age + ")";
 	}
-	
-	// equals() 메서드 재정의
+// HashSet 클래스는 사용자 정의 클래스의 중복성을 확인하기 위해서
+//	equals(), hashCode() 두 메소드를 Overriding(재정의)해야 한다.
+//	// equals() 메서드 재정의
 	@Override
 	public boolean equals(Object obj) {
 		if(obj instanceof Member) {

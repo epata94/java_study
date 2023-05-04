@@ -1,24 +1,23 @@
-package chapter13;
+package chapter14;
 import java.text.DecimalFormat;
-import java.util.Comparator;
 
 public class Student {
-    private static int nextId = 1;
-    private int id;
+    private String id;
     private String name;
     private int koreanScore;
     private int englishScore;
     private int mathScore;
 
-    public Student(String name, int koreanScore, int englishScore, int mathScore) {
-        this.id = nextId++;
+    public Student(String id, String name, int koreanScore, int englishScore, int mathScore) {
+
+        this.id = id;
         this.name = name;
         this.koreanScore = koreanScore;
         this.englishScore = englishScore;
         this.mathScore = mathScore;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -43,8 +42,8 @@ public class Student {
     }
 
     public String toString() {
-        DecimalFormat df = new DecimalFormat("ID000");
-        return name + "\t" + df.format(id) + "\t" + koreanScore + "\t" + englishScore + "\t" + mathScore + "\t" + String.format("%.2f", getAverage());
+
+        return name + "\t" + id + "\t" + koreanScore + "\t" + englishScore + "\t" + mathScore + "\t" + String.format("%.2f", getAverage());
     }
 
 

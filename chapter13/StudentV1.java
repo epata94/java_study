@@ -1,8 +1,7 @@
 package chapter13;
 import java.text.DecimalFormat;
-import java.util.Comparator;
 
-public class Student {
+public class StudentV1 {
     private static int nextId = 1;
     private int id;
     private String name;
@@ -10,7 +9,7 @@ public class Student {
     private int englishScore;
     private int mathScore;
 
-    public Student(String name, int koreanScore, int englishScore, int mathScore) {
+    public StudentV1(String name, int koreanScore, int englishScore, int mathScore) {
         this.id = nextId++;
         this.name = name;
         this.koreanScore = koreanScore;
@@ -46,6 +45,4 @@ public class Student {
         DecimalFormat df = new DecimalFormat("ID000");
         return name + "\t" + df.format(id) + "\t" + koreanScore + "\t" + englishScore + "\t" + mathScore + "\t" + String.format("%.2f", getAverage());
     }
-
-
 }
