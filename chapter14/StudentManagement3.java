@@ -6,7 +6,12 @@ import java.util.Scanner;
 
 public class StudentManagement3 {
     // ArrayList이기 때문에 MAX SIZE를 지정할 필요가 없다.
+    // studentMap 레파지토리에 학생ID를 Key로 사용했다.
+    // HashMap의 장점을 이해하는 예로 자연키인 학생ID를 사용했다.
+    // 실무에서 복잡한 데이터의 연관관계를 표현할때에는 자연키보다 대리키를 사용한다. 이는 추후 스프링입문시 다룬다.
     private static HashMap<String, Student> studentMap = new HashMap<>();
+    private static int idNum = 1;
+    private static DecimalFormat df = new DecimalFormat("ID000");
 
     public static void main(String[] args) {
         initializeStudents();
@@ -15,12 +20,11 @@ public class StudentManagement3 {
 
     // 5명의 임의의 학생 데이터 생성
     private static void initializeStudents() {
-        int idNum = 1;
         String[] names = {"홍길동", "김철수", "이영희", "박종수", "최지수"};
         int[] koreanScores = {80, 90, 70, 85, 95};
         int[] englishScores = {85, 85, 75, 95, 90};
         int[] mathScores = {90, 70, 80, 95, 85};
-        DecimalFormat df = new DecimalFormat("ID000");
+        
         for (int i = 0; i < names.length; i++) {
             String id = df.format(idNum++);
 // 값을 입력할 때 인덱스(위치정보)가 필요없다.
@@ -96,28 +100,36 @@ public class StudentManagement3 {
 
     // 2. 최고 평균점수 학생 검색
     private static void searchHighestAverageStudent() {
-        double maxAvg = (studentMap.get(0)).getAverage();
-        int maxIndex = 0;
+        double maxAvg = Double.MIN_VALUE;
+        String maxKey = "";
 
-        for (int i = 1; i < studentMap.size(); i++) {
-            if ( studentMap.get(i).getAverage() > maxAvg ) {
-                maxAvg = studentMap.get(i).getAverage();
-                maxIndex = i;
+        for (String id : studentMap.keySet()) {
+            Student student = studentMap.get(id);
+            double avg = student.getAverage();
+
+            if (avg > maxAvg) {
+                maxAvg = avg;
+                maxKey = id;
             }
         }
-        System.out.println("최고 평균점수 학생: " + studentMap.get(maxIndex).getName());
+
+        System.out.println("최고 평균점수 학생: " + studentMap.get(maxKey).getName());
     }
     private static void searchLowestAverageStudent() {
-        double minAvg = studentMap.get(0).getAverage();
-        int minIndex = 0;
+        double minAvg = Double.MAX_VALUE;
+        String minKey = "";
 
-        for (int i = 1; i < studentMap.size(); i++) {
-            if ( studentMap.get(i).getAverage() < minAvg ) {
-                minAvg = studentMap.get(i).getAverage();
-                minIndex = i;
+        for (String id : studentMap.keySet()) {
+            Student student = studentMap.get(id);
+            double avg = student.getAverage();
+
+            if (avg < minAvg) {
+                minAvg = avg;
+                minKey = id;
             }
         }
-        System.out.println("최저 평균점수 학생: " + studentMap.get(minIndex).getName());
+
+        System.out.println("최저 평균점수 학생: " + studentMap.get(minKey).getName());
     }
 
     // 4. 학생 검색
@@ -147,9 +159,9 @@ public class StudentManagement3 {
         System.out.print("수학 점수를 입력하세요: ");
         int mathScore = scanner.nextInt();
         scanner.nextLine();
-
-//        Student newStudent = new Student(name, koreanScore, englishScore, mathScore);
-//        studentMap.put(newStudent);
+        String id = df.format(idNum++);
+        Student newStudent = new Student(id, name, koreanScore, englishScore, mathScore);
+        studentMap.put(id, newStudent);
         System.out.println("학생이 추가되었습니다.");
     }
 }
