@@ -1,0 +1,46 @@
+1. ArrayList에 제네릭을 사용하여 문자열을 저장하는 예시 코드를 작성하세요.
+ ArrayList 변수 list를 생성하고 여기에 apple, banana, orange 문자열을 추가하고 ArrayLiust의 사이즈와  출력하세요.
+
+ * 화면출력
+  ArrayList size: 3
+  apple
+  banana
+  orange
+
+2. ArrayList에 제너릭을 사용하여 Employee 클래스의 내용을 출력하는 코드를 작성하세요.
+ - Employee1 클래스
+  + name, age, salary 필드를 정의하세요
+  + 필드값으로 초기화할수 있는 생성자를 만드세요.
+  + 필드내용을 출력할 수 있도록 toString메소드를 재정의하세요.
+
+ * 화면출력
+ 이름: 홍길동, 나이: 25, 급여: 50000
+ 이름: 이순신, 나이: 30, 급여: 60000
+ 이름: 강감찬, 나이: 35, 급여: 70000
+
+ 3. 학생들의 이름과 점수를 저장하는 Employee2 클래스를 만들어 HashMap에 등록하고, 이름을 입력하면 해당 학생의 점수를 출력하는 프로그램을 작성해보세요.
+ - Employee2 클래스 (문제2와 중복되지 않게 반드시 Employee2 클래스로 작성하세요)
+  + id, name 필드를 작성하세요.
+  + 두 필드를 초기화 할수 있는 생성자를 만드세요.
+  + 두 필드의 getter함수를 만드세요.
+  + 홍길동, 이순신, 강감찬 이름과 임의의 점수로 객체를 만드세요.
+ * 화면출력
+ 이순신의 점수는 80점입니다.
+
+ 4. Employee3 클래스를 생성하고, Employee 객체의 id와 이름을 저장하는 HashMap을 만들고, id를 입력하면 해당하는 Employee 객체의 이름을 출력하는 프로그램을 작성해보세요.
+ - Employyee3 클래스 (앞 문제의 클래스명과 중복되지 않게 반드시 Employee3 클래스로 작성하세요)
+  + id, name 필드를 작성하세요.
+  + 두 필드를 초기화 할수 있는 생성자를 만드세요.
+  + 두 필드의 getter함수를 만드세요.
+  + 홍길동, 이순신, 강감찬 이름과 임의의 점수로 객체를 만드세요.
+
+ * 화면출력
+ id가 2인 Employee의 이름은 이순신입니다.
+
+ 5. 앞에서 ArrayList로 작성했던 학생 점수 관리 프로그램을 HashMap 버전으로 업그레이드 하세요.
+ - Student 클래스
+  + int 타입이였던 id 필드를 String 필드로 변경하세요.
+ - StudentManagement3 클래스
+  + 아래와 같이 학생 ID를 Key로 하여 Student 클래스의 객체를 Value로 하여 HashMap을 활용한다.
+  private static HashMap<String, Student> studentMap = new HashMap<>();
+  + 기존 Studnet 클래스에서 id에 포멧적용하는 기능을 StudnetManagement3 클래스에서 담당한다.
