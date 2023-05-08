@@ -8,9 +8,9 @@ public class GBasic2 {
 		// TODO Auto-generated method stub
 		List<String> list = new ArrayList<String>();
 		list.add("홍길동");
-//		String name = list.get(0);
-		String name = (String)list.get(0);
-		System.out.println(((String)list.get(0)).length());
+		String name = list.get(0);
+//		String name = (String)list.get(0);
+		System.out.println(list.get(0).length());
 		System.out.println(name);
 		
 //		list.add(1); // 런타임에러가 발생하기 전에 보다 컴파일 에러로 문제를 빨리 해결할 수 있다.

@@ -25,7 +25,7 @@ public class WildSuper {
         List<Woman> listW = new ArrayList<Woman>();
         listW.add(new Woman("백예린"));
         listW.add(new Woman("박정현"));
-//      printData(listW); → Man 클래스의 상위 클래스가 아니기 때문에 메소드 호출 불가
+//        printData(listW); //→ Man 클래스의 상위 클래스가 아니기 때문에 메소드 호출 불가
 
     }
 

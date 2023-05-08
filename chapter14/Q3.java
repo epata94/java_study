@@ -17,20 +17,3 @@ public class Q3 {
         System.out.println(name + "의 점수는 " + score + "점입니다.");
     }
 }
-class Employee2 {
-    private int id;
-    private String name;
-
-    public Employee2(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-}

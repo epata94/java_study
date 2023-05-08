@@ -28,7 +28,7 @@ public class StudentManagement3 {
         for (int i = 0; i < names.length; i++) {
             String id = df.format(idNum++);
 // 값을 입력할 때 인덱스(위치정보)가 필요없다.
-            studentMap.put(id,new Student(id, names[i],koreanScores[i],englishScores[i],mathScores[i]));
+            studentMap.put( id, new Student(id, names[i],koreanScores[i],englishScores[i],mathScores[i]) );
         }
     }
 

@@ -7,14 +7,14 @@ public class Q4 {
         Map<Integer, Employee3> employees = new HashMap<>();
 
         // Employee 객체 생성
-        Employee3 alice = new Employee3(1, "홍길동");
-        Employee3 bob = new Employee3(2, "이순신");
-        Employee3 charlie = new Employee3(3, "강감찬");
+        Employee3 e1 = new Employee3(1, "홍길동");
+        Employee3 e2 = new Employee3(2, "이순신");
+        Employee3 e3 = new Employee3(3, "강감찬");
 
         // Employee 객체를 HashMap에 추가
-        employees.put(alice.getId(), alice);
-        employees.put(bob.getId(), bob);
-        employees.put(charlie.getId(), charlie);
+        employees.put(e1.getId(), e1);
+        employees.put(e2.getId(), e2);
+        employees.put(e3.getId(), e3);
 
         // Employee 객체의 id를 입력받아 해당 Employee 객체의 이름을 출력
         int id = 2;
