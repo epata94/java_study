@@ -7,7 +7,6 @@ public class BreakDemo {
             if (i == 5)
                 break;
             System.out.println("Coding Everybody "+i);
-
         }
     }
 }
