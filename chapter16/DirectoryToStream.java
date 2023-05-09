@@ -13,7 +13,8 @@ public class DirectoryToStream {
 		try {
 			System.out.println("list() 메서드를 이용하여 스트림 생성하기");
 			// src 디렉토리로 Path 객체 생성
-			Path path = Paths.get("src");
+//			Path path = Paths.get("src");
+			Path path = Paths.get("D:\\HKLEE\\Instructor_Project\\WebProject\\2_BackEnd\\1_Java");
 			// src 경로의 모든 디렉토리와 파일 Stream 객체로 생성
 			Stream<Path> sr1 = Files.list(path);
 			sr1.forEach(p -> System.out.println(p.getFileName()));

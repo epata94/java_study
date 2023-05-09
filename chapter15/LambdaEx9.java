@@ -24,7 +24,10 @@ public class LambdaEx9 {
 		
 		System.out.print("최소 수학점수 : ");
 		System.out.println(maxOrMinMath((a,b) -> (a<=b?a:b)));
-		
+
+		System.out.print("최대 수학점수 : ");
+		System.out.println(maxOrMinMath((a,b) -> (a>=b?a:b)));
+
 		System.out.print("최대 평균점수 : ");
 		System.out.println(maxOrMinAvg((a, b) -> (a>=b?a:b)));
 		

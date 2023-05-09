@@ -8,8 +8,7 @@ public class IteratorEx {
 
 	public static void main(String[] args) {
 		
-		List<String> list = Arrays.asList(new String[]{"홍길동", "김유신", 
-				"이순신", "유관순"});
+		List<String> list = Arrays.asList(new String[]{"홍길동", "김유신", "이순신", "유관순"});
 		System.out.println("for문 이용");
 		for (int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i));

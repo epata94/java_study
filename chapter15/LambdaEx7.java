@@ -13,7 +13,8 @@ public class LambdaEx7 {
 		};
 		System.out.println(s1.get());
 		
-		s1 = () -> "이순신";
+		s1 = () -> "이순신"; // 람다식을 재정의
+
 		System.out.println(s1.get());
 		
 		IntSupplier s2 = () -> {
