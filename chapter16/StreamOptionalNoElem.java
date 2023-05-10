@@ -14,7 +14,7 @@ public class StreamOptionalNoElem {
 		
 		long count =list.stream().count();
 		System.out.println("요소들의 갯수 : " + count);
-		
+
 		int sum =list.stream().mapToInt(Integer::intValue).sum();
 		System.out.println("요소들의 합 : " + sum);
 		

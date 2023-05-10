@@ -19,8 +19,9 @@ public class StreamOrder2 {
 		list.stream().sorted().forEach(System.out::println);
 		
 		System.out.println("내림차순 정렬 1");
-		list.stream().sorted((a,b) -> b.compareTo(a) - a.compareTo(b) ).forEach(System.out:: println);
-		
+//		list.stream().sorted((a,b) -> b.compareTo(a) - a.compareTo(b) ).forEach(System.out:: println);
+		list.stream().sorted((a,b) ->  a.compareTo(b) * -1 ).forEach(System.out:: println);
+
 		System.out.println("내림차순 정렬 2");
 		list.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 				

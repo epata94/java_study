@@ -21,10 +21,10 @@ public class StreamGroupingBy {
 			Map<Object,List<Shape>> map = list.stream().collect(Collectors.groupingBy(f -> f.getClass()));
 			
 			System.out.println("사각형 출력");
-			map.get(Class.forName("chapter19.Rectangle")).stream().forEach(f -> System.out.println(f));
+			map.get(Class.forName("chapter16.Rectangle")).stream().forEach(f -> System.out.println(f));
 			
 			System.out.println("원 출력");
-			map.get(Class.forName("chapter19.Circle")).stream().forEach(f -> System.out.println(f));
+			map.get(Class.forName("chapter16.Circle")).stream().forEach(f -> System.out.println(f));
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println(e.getMessage());

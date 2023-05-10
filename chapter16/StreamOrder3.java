@@ -28,8 +28,9 @@ public class StreamOrder3 {
 		}).forEach(System.out::println);
 		
 		System.out.println("람다표현식을 이용하여 둘레순으로 정렬");
-		list.stream().sorted((a,b) -> (int)(a.length() - a.length()) ).forEach(System.out:: println);
-		
+		list.stream().sorted((a,b) -> (int)(a.length() - b.length()) ).forEach(System.out:: println);
+//		list.stream().sorted((a,b) -> (int)(a.length() - a.length()) ).forEach(System.out:: println);
+
 				
 	}
 }

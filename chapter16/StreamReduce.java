@@ -16,6 +16,8 @@ public class StreamReduce {
 		
 		double areaSum = list.stream().mapToDouble(Shape::area).sum();
 		System.out.println("sum()를 이용한 면적 합계 :" + areaSum);
+		// reduce([ BinaryOperator<T>] )
+		// a: 이전요소, b: 현재요소
 		areaSum = list.stream().mapToDouble(Shape::area).reduce((a, b) -> a+b).getAsDouble();
 		System.out.println("reduce(Operator) 를 이용한 면적 합계 :" + areaSum);
 		
